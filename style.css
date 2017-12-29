@@ -1,0 +1,202 @@
+/* MEDIA RESPONSIVENESS STYLE*/
+
+*, *:before, *:after {
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+/* Small screens (default) */
+html { font-size: 100%; }
+
+/* Medium screens (640px) */
+@media (min-width: 40rem) {
+
+  .column {
+    float: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .column.full { width: 100%; }
+  .column.two-thirds { width: 66.7%; }
+  .column.half { width: 50%; }
+  .column.third { width: 33.3%; }
+  .column.fourth { width: 25%; }
+  .column.flow-opposite { float: right; }  
+
+}
+
+/* Large screens (1024px) */
+@media (min-width: 64rem) { 
+  .column {
+    float: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .column.full { width: 100%; }
+  .column.two-thirds { width: 66.7%; }
+  .column.half { width: 50%; }
+  .column.third { width: 33.3%; }
+  .column.fourth { width: 25%; }
+  .column.flow-opposite { float: right; }  
+}
+
+.clearfix:before,
+.clearfix:after {
+content: " ";
+display: table;
+}
+.clearfix:after {
+clear: both;
+}
+.clearfix {
+*zoom: 1;
+}
+
+/* BASIC ARCHITECTURE STYLE */
+
+.container {
+margin: auto;
+
+max-width: 1000px;
+background-color: white;
+padding: 50px;
+border-width: 2px;
+border-color: #d32f2f;
+border-radius: 5px;
+border-style: solid;
+/*font-family: 'Raleway', sans-serif;*/
+}
+
+.row {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+#containStyle {
+min-height: 200px;
+padding: 0px;
+}
+
+.column {
+/*background-color: #eceff1*/;
+margin-bottom: 5px;
+/*padding: 5px;*/
+/*border: 1px;
+border-color: #9a0007;
+border-style: dotted;*/
+text-align: center;
+font-family: 'Roboto Condensed', sans-serif;
+color: #9a0007;
+
+}
+
+#menuStyle {
+  color: black;
+  text-decoration: none;
+}
+
+/* BUTTON STYLE */
+
+.button {
+  display: inline-block;
+  border-radius: 25px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Raleway', sans-serif;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* DISPLAY STYLE */
+
+#headstyle {
+background-color: white;
+text-align: center;
+font-family: 'Baloo', cursive;
+font-size: 46px;
+text-align: center;
+}
+
+#headstyle2 {
+background-color: white;
+text-align: center;
+font-family: 'Baloo', cursive;
+font-size: 46px;
+}
+
+#imgStyle {
+text-align: center;
+width: 90%;
+height: auto;
+/*padding-top: -10px;*/
+/*display: block;
+*/}
+
+#linkStyle {
+text-decoration: none;
+text-align: center;
+}
+
+/* FADE IN STYLE */
+/* source: https://www.tutorialspoint.com/css/css_animation_fade_in.htm */
+ .animated {
+            background-image: url(assets/cube.png);
+            background-repeat: no-repeat;
+            background-position: center top;
+            padding-top: 200px;
+            margin-bottom: 10px;
+            -webkit-animation-duration: 10s;
+            animation-duration: 10s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+         }
+         
+         @-webkit-keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+         }
+         
+         @keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+         }
+         
+         .fadeIn {
+            -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+         }
