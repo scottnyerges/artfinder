@@ -3,4 +3,4 @@
 
 This design mockup is a work in progress. The app's home page is rendered in this initial commit. 
 
-![screengrab] (https://github.com/scottnyerges/artfinder/blob/master/Screen%20Shot%202017-12-29%20at%206.32.59%20PM.png)
+![Here's a screengrab....] (https://github.com/scottnyerges/artfinder/blob/master/Screen%20Shot%202017-12-29%20at%206.32.59%20PM.png)
